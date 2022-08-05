@@ -27,6 +27,6 @@ h1{
     width: 20px;
     transition: height 0.3s;
     background-color: #EEEEEE;
-    transitions : 0.3s background-color;
+    /* transition: 0.4s background-color; */
     /* border: 1px solid #EEEEEE; */
 }

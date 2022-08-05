@@ -1,6 +1,6 @@
 let bubble = document.querySelector("#bubble");
 
-bubble.addEventListener('click',async function bubbleSort() {
+bubble.addEventListener('click',async ()=> {
     disableButtons(true);
     for (let i = 0; i < heights.length; i++) {
         // let flag = 0;
@@ -8,7 +8,7 @@ bubble.addEventListener('click',async function bubbleSort() {
             let first = `bar${j}`;
             let second = `bar${j + 1}`;
             colorChange(first,second,true);
-            await new Promise(resolve => {setTimeout(() => {resolve()}, 300)});
+            await new Promise(resolve => {setTimeout(() => {resolve()}, 100)});
             if (heights[j] > heights[j + 1]) {
                 swap(first,second,heights[j],heights[j+1]);
                 let temp = heights[j];
@@ -49,6 +49,7 @@ function colorChange(el1, el2, change){
 function disableButtons(doThis){
     let buttons = document.querySelectorAll("button");
     for(let b of buttons){
+        if(b.id !== "merge" && b.id!== "quick")
         b.disabled = doThis;
     }
 }
