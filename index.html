@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Sorting Style Sheet -->
+    <link rel="stylesheet" href="sorting.css">
+
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <div class="">
+        <h1>Sorting Visualizer</h1>
+        <nav class="navbar">
+            <button id="array" class="btn btn-outline-light ms-4" >New Array</button>
+            <div class="sorting-buttons me-4">
+                <button id="bubble" class="sorting btn btn-outline-warning">Bubble Sort</button>
+                <button id="insertion" class="sorting btn btn-outline-warning">Insertion Sort</button>
+                <button id="selection" class="sorting btn btn-outline-warning">Selection Sort</button>
+                <button id="merge" class="sorting btn btn-outline-warning">Merge Sort</button>
+                <button id="quick" class="sorting btn btn-outline-warning">Quick Sort</button>
+            </div>
+        </nav>
+        <div id="bars"></div> 
+    </div>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+    <!-- Sorting Scripts -->
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="selection.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+</body>
+
+</html>
